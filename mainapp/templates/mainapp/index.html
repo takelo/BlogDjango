@@ -1,10 +1,135 @@
 {% extends 'layouts/layout.html' %}
 
-
 {% block title %}
 	{{title}}
 {% endblock %}
 
 {% block content %}
-	<h1> {{title}} </h1>
+
+
+
+
+	<section class="servicios">
+		<div class="contenedor-video">
+		  <video autoplay loop muted poster="">
+			<source src="../../static/images/video.mp4" type="video/mp4">
+		  </video>
+		  <div class="data container">
+			<div class="row">
+			  <div class="col-12 col-lg-5 pb-lg-0 pb-5">
+				<div class="logo wow zoomIn">
+				  <img src="../../static/images/logo.png" alt="logo" class="img-fluid glow"> 
+				</div>
+			 
+				<div class="title wow fadeIn" data-wow-delay="0.1s">
+					<h1> {{title}} </h1>
+				</div>
+	
+				</h2>
+			  </div>
+			  <div class="items col-12 col-lg-7 d-flex align-items-center">
+				<div class="row">
+				
+				  <div class="item col-12 col-md-6 pb-3 pb-md-0 wow fadeIn" data-wow-delay="0.3s">
+					<div class="row">
+					  <div class="col-3 mt-1">
+						<i class="fas fa-desktop pr-3"></i>
+					  </div>
+					  <div class="col-9">
+						<h3 class="text-left">Diseño Web</h3>
+						<p class="text-left">Diseño y programación de sitios Web, paginas informativas, landing-pages, diseños exclusivos y a medida según tu necesidad. </p>
+					  </div>
+					</div>
+				  </div>
+	
+	
+				  <div class="item col-12 col-md-6 pb-3 pb-md-0 wow fadeIn" data-wow-delay="0.5s">
+					<div class="row">
+					  <div class="col-3 mt-1">
+						<i class="fas fa-shopping-bag"></i>
+					  </div>
+					  <div class="col-9">
+						<h3 class="text-left">E-commerce</h3>
+						<p class="text-left">Tu tienda online autoadmisitrable. Soluciones personalizadas de Ecommerce y Venta Directa.</p>
+					  </div>
+					</div>
+				  </div>
+	
+				  <div class="item col-12 col-md-6 pb-3 pb-md-0 wow fadeIn" data-wow-delay="0.7s">
+					<div class="row">
+					  <div class="col-3 mt-1">
+						<i class="fas fa-mobile-alt"></i>
+					  </div>
+					  <div class="col-9">
+						<h3 class="text-left">Mobile App</h3>
+						<p class="text-left">Desarrollo y subo tu App a la Play Store de Android. Tu App vinculada a tu sitio personal o E-commerce siempre actualizada</p>
+					  </div>
+					</div>
+				  </div>
+	
+			  </div>
+	  
+			</div>
+		  </div>
+		</div><!-- contenedor video -->
+	
+	  </section>
+	
+	  <section id="portfolio" class="portfolio">
+	
+		<div class="contador parallax">
+			<div class="contenedor">
+			  <ul class="resumen-evento clearfix">
+				<li><p class="numero">0</p>Invitados</li>
+				<li><p class="numero">0</p>Talleres</li>
+				<li><p class="numero">0</p>Dias</li>
+				<li><p class="numero">0</p>Conferencias</li>
+			  </ul>
+			</div>
+		  </div> <!--parallax-->
+	  </section>
+	
+	
+	
+	  <section id="contacto" class="contacto text-center">
+		<div class="container">
+		  <h2>Información de contacto</h2>
+		  <div class="row">
+			<div class="col-xl-12">
+			  <ul>
+				<li><i class="fas fa-envelope"></i>&nbsp;MAIL: <a
+					href="mailto:echeverriajm@yahoo.com.ar">echeverriajm@yahoo.com.ar</a></li>
+				<!-- <li><i class="fas fa-phone"></i>&nbsp;TÉLEFONO: <a href="tel:3434729353">343-4729353</a></li> -->
+				<li><i class="fab fa-whatsapp"></i>&nbsp;WHATSAPP: <a href="https://wa.me/5493434729353">+5493434729353</a>
+				</li>
+				<!-- <li><i class="fab fa-facebook"></i>&nbsp;FACEBOOK: <a
+					href="https://www.facebook.com/takelo">facebook/echeverriajm</a></li> -->
+				<!-- <li><i class="fas fa-map-marker-alt"></i>&nbsp;DIRECCIÓN: Ricardo Balbin y Gobernador Enrique Mihura</li> -->
+				<!-- <li><i class="fas fa-clock"></i>&nbsp;HORARIOS: Lunes a Viernes – 8:00hs a 17:00hs</li> -->
+			  </ul>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-xl-12">
+			  <div id="contacto" class="contacto">
+				<h3>O completa el formulario</h3>
+				<form method="post" action="https://formspree.io/factorzero@gmail.com">
+				  <div class="field half first">
+					<input type="text" name="name" id="name" placeholder="Nombre" />
+				  </div>
+				  <div class="field half">
+					<input type="email" name="email" id="email" placeholder="Mail" />
+				  </div>
+				  <div class="field">
+					<textarea name="message" id="message" placeholder="Mensaje"></textarea>
+				  </div>
+				  <input class="btn btn-secondary btn-lg" type="submit" value="Enviar" class="special" />
+	
+				</form>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section> 
 {% endblock %}

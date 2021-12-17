@@ -7,7 +7,7 @@ def index(request):
         'title': 'Inicio'
     })
 
-def about(request):
-    return render(request, 'mainapp/about.html', {
-        'title': 'Sobre mi'
-    })
+# def about(request):
+#     return render(request, 'mainapp/about.html', {
+#         'title': 'Sobre mi'
+#     })
